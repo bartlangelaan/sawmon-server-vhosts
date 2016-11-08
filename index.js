@@ -39,11 +39,11 @@ function parseApacheConfig (apacheConfig){
 
 module.exports.dependencies = ['sawmon-ssh'];
 
-module.exports.schema = {
+module.exports.servers = {};
+
+module.exports.servers.schema = {
     vhosts: String
 };
-
-module.exports.servers = {};
 
 module.exports.servers.display = [
     {
